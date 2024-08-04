@@ -1,15 +1,17 @@
 import Image from "next/image";
-import person from "../../public/assets/person.svg";
-import google from "../../public/assets/google.svg";
-import github from "../../public/assets/github.svg";
-export default function Page() {
+import Profile from "../../components/profile";
+import google from "../../../public/assets/google.svg";
+import github from "../../../public/assets/github.svg";
+import Link from "next/link";
+
+export default function AuthPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background relative ">
       <div className="flex flex-row w-full justify-between ">
-        <h1 className="text-4xl font-semibold text-primary ">Vibe Finder</h1>
-        <div className="flex flex-col items-center justify-center w-10 h-10 border-black border bg-grey rounded-3xl self-start">
-          <Image className="w-6 h-6" src={person} alt="person" />
-        </div>
+        <Link href="/">
+          <h1 className="text-4xl font-semibold text-primary ">Vibe Finder</h1>
+        </Link>
+        <Profile />
       </div>
       <div className="w-full h-96 mb-20 flex flex-row">
         <form className="flex flex-col justify-between w-72 h-full mx-36 ">
@@ -43,14 +45,14 @@ export default function Page() {
           <form className="flex flex-col w-full h-full">
             <h2 className="text-text mb-4">login</h2>
             <div className="flex flex-row w-full justify-between mb-10 ">
-              <div className="flex border border-black align-center justify-center rounded-lg w-28 h-10">
+              <div className="cursor-pointer flex border border-black align-center justify-center rounded-lg w-28 h-10">
                 <Image
                   className="w-6 h-6 self-center"
                   src={github}
                   alt="github"
                 />
               </div>
-              <div className="flex border border-black  align-center justify-center rounded-lg w-28 h-10">
+              <div className="cursor-pointer flex border border-black  align-center justify-center rounded-lg w-28 h-10">
                 <Image
                   className="w-6 h-6 self-center"
                   src={google}

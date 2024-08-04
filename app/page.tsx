@@ -2,16 +2,17 @@ import Image from "next/image";
 import location from "../public/assets/location_on.svg";
 import glass from "../public/assets/glass.svg";
 import cancel from "../public/assets/cancel.svg";
-import person from "../public/assets/person.svg";
+import Profile from "./components/profile";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background relative ">
       <div className="flex flex-row w-full justify-between">
         <h1 className="text-4xl font-semibold text-primary">Vibe Finder</h1>
-        <div className="flex flex-col items-center justify-center w-10 h-10 border-black border bg-grey rounded-3xl self-start">
-          <Image className="w-6 h-6 " src={person} alt="person" />
-        </div>
+        <Link href="/auth">
+          <Profile />
+        </Link>
       </div>
       <div className="flex flex-row items-center mb-52 w-7/12">
         <div className="flex border-black border bg-grey rounded-md p-4 w-full h-16 items-center">
