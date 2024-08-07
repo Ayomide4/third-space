@@ -1,9 +1,11 @@
 import Image from "next/image";
 import person from "../../public/assets/person.svg";
 
-//FIXME: fix background prop
+interface PersonProps {
+  background: string;
+}
 
-export default function Person(background: string) {
+export default function Person({ background }: PersonProps) {
   return (
     <div
       className={`flex flex-col items-center justify-center w-10 h-10 border-black border bg-${background} rounded-3xl self-start`}

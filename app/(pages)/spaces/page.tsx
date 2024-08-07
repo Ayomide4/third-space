@@ -18,10 +18,12 @@ const cardInfo = {
 export default function SpacesPage() {
   return (
     <div className="flex flex-row">
-      <aside className="w-32 h-screen bg-primary flex flex-col items-center justify-between">
-        <Profile background="22" />
-        <div className="flex items-center justify-center w-10 h-10 bg-background rounded-full">
+      <aside className="w-32 h-screen py-10 bg-primary flex flex-col items-center justify-between">
+        <div className="flex items-center justify-center w-10 h-10 bg-grey rounded-full">
           <Image src={hamburger} className="w-6 h-6" alt="hamburger menu" />
+        </div>
+        <div className="">
+          <Profile background="grey" />
         </div>
       </aside>
       <main className="flex w-full h-screen bg-background ">

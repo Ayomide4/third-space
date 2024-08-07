@@ -11,7 +11,7 @@ export default function AuthPage() {
         <Link href="/">
           <h1 className="text-4xl font-semibold text-primary ">Vibe Finder</h1>
         </Link>
-        <Profile />
+        <Profile background="grey" />
       </div>
       <div className="w-full h-96 mb-20 flex flex-row">
         <form className="flex flex-col justify-between w-72 h-full mx-36 ">

@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex flex-row w-full justify-between">
         <h1 className="text-4xl font-semibold text-primary">Vibe Finder</h1>
         <Link href="/auth">
-          <Profile />
+          <Profile background="grey" />
         </Link>
       </div>
       <div className="flex flex-row items-center mb-52 w-7/12">
