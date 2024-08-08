@@ -14,7 +14,7 @@ export default function Home() {
           <Profile background="grey" />
         </Link>
       </div>
-      <div className="flex flex-row items-center mb-52 w-7/12">
+      <div className="flex flex-row items-center mb-64 w-7/12">
         <div className="flex border-black border bg-grey rounded-md p-4 w-full h-16 items-center">
           <Image
             className="w-6 h-6 cursor-pointer"

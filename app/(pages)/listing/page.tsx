@@ -14,8 +14,6 @@ const cardInfo = {
   website: "https://www.google.com",
 };
 
-//FIXME: height changes when addign more reviews to scrollable div
-
 export default function ListingPage() {
   const reviewInfo = {
     name: "John Doe",
@@ -52,33 +50,35 @@ export default function ListingPage() {
               <h1 className="text-4xl text-primary mb-2">Coffee Shop</h1>
               <span className="flex items-center mb-1">
                 <p className="text-lg">{cardInfo.reviews}</p>
-                <div className="flex mb-1 ml-4">
-                  <Image
-                    src={star_filled}
-                    className="w-4 h-4"
-                    alt="star filled"
-                  />
-                  <Image
-                    src={star_filled}
-                    className="w-4 h-4"
-                    alt="star filled"
-                  />
-                  <Image
-                    src={star_filled}
-                    className="w-4 h-4"
-                    alt="star filled"
-                  />
-                  <Image
-                    src={star_filled}
-                    className="w-4 h-4"
-                    alt="star filled"
-                  />
-                  <Image
-                    src={star_empty}
-                    className="w-4 h-4"
-                    alt="star empty"
-                  />
-                </div>
+                <span className="flex items-center mb-1 ml-2">
+                  <span className="flex space-x-1">
+                    <Image
+                      src={star_filled}
+                      className="flex-1"
+                      alt="star filled"
+                    />
+                    <Image
+                      src={star_filled}
+                      className="flex-1 "
+                      alt="star filled"
+                    />
+                    <Image
+                      src={star_filled}
+                      className="flex-1 "
+                      alt="star filled"
+                    />
+                    <Image
+                      src={star_filled}
+                      className="flex-1 "
+                      alt="star filled"
+                    />
+                    <Image
+                      src={star_empty}
+                      className="flex-1 "
+                      alt="star empty"
+                    />
+                  </span>
+                </span>
               </span>
               <p>{cardInfo.description}</p>
               <span className="flex items-center">
@@ -87,8 +87,9 @@ export default function ListingPage() {
               </span>
               <p>{cardInfo.website}</p>
             </div>
-            <h1 className="text-4xl text-primary font-light mb-2">Reviews</h1>
-            <div className="px-4 flex flex-col space-y-1 h-full overflow-y-scroll">
+            <h1 className="text-4xl text-primary font-light mb-1">Reviews</h1>
+            <div className="px-4 flex h-[32rem] flex-col space-y-1 overflow-y-scroll">
+              <Review {...reviewInfo} />
               <Review {...reviewInfo} />
               <Review {...reviewInfo} />
               <Review {...reviewInfo} />
