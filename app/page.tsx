@@ -7,14 +7,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background relative ">
-      <div className="flex flex-row w-full justify-between">
-        <h1 className="text-4xl font-semibold text-primary">Vibe Finder</h1>
-        <Link href="/auth">
+    <main className="flex min-h-screen flex-col items-center justify-between p-10  bg-background relative ">
+      <div className="flex flex-col w-full ">
+        <Link href="/auth" className="w-fit self-end mb-20">
           <Profile background="grey" />
         </Link>
+        <h1 className="text-3xl font-semibold text-primary text-center">
+          Vibe Finder
+        </h1>
       </div>
-      <div className="flex flex-row items-center mb-64 w-7/12">
+      <div className="flex flex-col items-center mb-64 w-full">
         <div className="flex border-black border bg-grey rounded-md p-4 w-full h-16 items-center">
           <Image
             className="w-6 h-6 cursor-pointer"
@@ -28,7 +30,7 @@ export default function Home() {
           <Image className="w-6 h-6 cursor-pointer" src={cancel} alt="cancel" />
         </div>
         <Image
-          className="w-12 h-12 ml-4 cursor-pointer"
+          className="w-12 h-12 ml-4 cursor-pointer hidden"
           src={location}
           alt="location"
         />
