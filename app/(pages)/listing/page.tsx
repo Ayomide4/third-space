@@ -107,7 +107,7 @@ export default function ListingPage() {
           <p className="text-white">Write Review</p>
         </div>
       </main>
-      <ReviewModal />
+      {/*<ReviewModal />*/}
     </div>
   );
 }
