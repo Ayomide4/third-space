@@ -38,14 +38,14 @@ export default function ListingPage() {
       <main className="flex flex-col md:flex-row w-full h-full p-4 md:px-10 md:my-0 md:h-[85vh] bg-background">
         <div className="w-full md:w-2/3 md:mr-2 flex mb-2 md:mb-0">
           <div className="md:flex flex-col w-44 space-y-1 hidden">
-            <div className="flex-1 bg-black rounded-xl"></div>
-            <div className="flex-1 bg-black rounded-xl"></div>
-            <div className="flex-1 bg-black rounded-xl"></div>
-            <div className="flex-1 bg-black rounded-xl"></div>
-            <div className="flex-1 bg-black rounded-xl"></div>
-            <div className="flex-1 bg-black rounded-xl"></div>
+            <div className="flex-1 bg-[#E6DFEE] rounded-xl"></div>
+            <div className="flex-1 bg-[#E6DFEE] rounded-xl"></div>
+            <div className="flex-1 bg-[#E6DFEE] rounded-xl"></div>
+            <div className="flex-1 bg-[#E6DFEE] rounded-xl"></div>
+            <div className="flex-1 bg-[#E6DFEE] rounded-xl"></div>
+            <div className="flex-1 bg-[#E6DFEE] rounded-xl"></div>
           </div>
-          <div className="flex bg-black rounded-xl w-full h-56 md:ml-1 md:h-full  "></div>
+          <div className="flex bg-grey rounded-xl w-full h-56 md:ml-1 md:h-full  "></div>
         </div>
         <div className="w-full md:w-1/3 h-full md:border md:border-black rounded-xl">
           <div className="flex flex-col md:px-6 pt-2 w-full h-full ">

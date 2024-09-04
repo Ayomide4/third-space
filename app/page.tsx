@@ -5,7 +5,10 @@ import cancel from "../public/assets/cancel.svg";
 import Profile from "./components/profile";
 import Link from "next/link";
 
-//Todo: change color of location icon to primary
+//TODO:
+//- change color of location icon to primary
+//- add how to section
+//- add highlighted section
 
 export default function Home() {
   return (
