@@ -4,6 +4,7 @@ import glass from "../public/assets/glass.svg";
 import cancel from "../public/assets/cancel.svg";
 import Profile from "./components/profile";
 import Link from "next/link";
+import Recommended from "./components/recommended";
 
 //TODO:
 //- change color of location icon to primary
@@ -21,7 +22,7 @@ export default function Home() {
           Vibe Finder
         </h1>
       </div>
-      <div className="flex flex-col items-center mb-64 w-full">
+      <div className="flex flex-col items-center mb-64 w-full border border-black ">
         <div className="flex border-black border bg-grey rounded-md p-4 w-full h-16 items-center md:w-9/12">
           <Image
             className="w-6 h-6 cursor-pointer"
@@ -33,10 +34,13 @@ export default function Home() {
             placeholder="Search for a third space"
           />
           <Image
-            className="w-10 h-10 ml-4 cursor-pointer hidden md:block"
+            className="w-10 h-10 ml-4 cursor-pointer hidden md:block "
             src={location}
             alt="location"
           />
+        </div>
+        <div className="hidden w-full md:flex justify-center">
+          <Recommended />
         </div>
       </div>
     </main>
