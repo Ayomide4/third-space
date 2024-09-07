@@ -1,12 +1,14 @@
 package com.ayomide.third_space.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 //check user details documentation
 
+@Table("USERS")
 public class User {
     @Id
-    private int id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private String email;
@@ -14,12 +16,11 @@ public class User {
 
     public User(){}
 
-    public User(int id, String firstName, String lastName,String  email,String  password){
-       this.id = id;
-       this.firstName = firstName;
-       this.lastName = lastName;
-       this.email = email;
-       this.password = password;
+    public User(String firstName, String lastName, String email, String password){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
     }
 
     public String getFirstName(){
