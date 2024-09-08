@@ -1,69 +1,68 @@
 package com.ayomide.third_space.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
+
+@Table("SPACES")
 public class Space {
-   private int id;
-   private String name;
-   private String address;
-   private String description;
-   private String category;
-   private float rating;
+    @Id
+    private int id;
+    private String name;
+    private String address;
+    private String description;
+    private String category;
+    private float rating;
 
-   public Space(){};
-   public Space(int id, String name, String address, String description, String category, float rating){
-        this.id = id;
-        this.name = name;
-        this.address = address;
-        this.description = description;
-        this.category = category;
-        this.rating = rating;
-    };
+    public Space(){};
+    public Space(String name, String address, String description, String category, float rating){
+         this.name = name;
+         this.address = address;
+         this.description = description;
+         this.category = category;
+         this.rating = rating;
+     };
 
-    public int getId() {
-        return id;
-    }
+     public int getId() {
+         return id;
+     }
 
+     public String getName() {
+         return name;
+     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+     public void setName(String name) {
+         this.name = name;
+     }
 
-    public String getName() {
-        return name;
-    }
+     public String getAddress() {
+         return address;
+     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+     public void setAddress(String address) {
+         this.address = address;
+     }
 
-    public String getAddress() {
-        return address;
-    }
+     public String getDescription() {
+         return description;
+     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+     public void setDescription(String description) {
+         this.description = description;
+     }
 
-    public String getDescription() {
-        return description;
-    }
+     public String getCategory() {
+         return category;
+     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+     public void setCategory(String category) {
+         this.category = category;
+     }
 
-    public String getCategory() {
-        return category;
-    }
+     public float getRating() {
+         return rating;
+     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
+     public void setRating(float rating) {
+         this.rating = rating;
+     }
 }
